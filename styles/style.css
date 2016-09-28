@@ -1,0 +1,253 @@
+/*Warning that the star-tag is slow... wise to use it? If so limit its use*/
+* {
+  box-sizing: border-box;
+	/*used to create a cutter*/
+	/*box-sizing: border-box;*/
+}
+
+/*Top menu styles*/
+.wrapper_header {
+  position: fixed;
+  padding: 5px;
+  top: 0px;
+  height: 5em;
+  width: 100%;
+  z-index: 2;
+  border: 1px #000 solid;
+  background-color: #595959;
+  box-shadow: 0px 5px 10px #888888;
+}
+
+.header_content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+nav.top_menu {
+  font-family: Verdana, "Times New Roman", Times, serif;
+  font-size: 0.9em;
+}
+
+nav.top_menu a {
+  /*top right bottom left*/
+  padding: 20px 40px 20px 40px;
+  border: 1px #FFF solid;
+  color: #FFF;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+nav.top_menu a:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.me_small {
+  float: right;
+  transform: translate(-22%, 0);
+  height: 65px;
+}
+
+.current {
+  background-color: #a6a6a6;
+
+}
+/*Top menu styles*/
+
+.wrapper_content {
+  position: absolute;
+  top: 9em;
+
+  font-family: Verdana, "Times New Roman", Times, serif;
+  font-size: 0.85em;
+
+  width: 100%;
+  text-align: center;
+
+}
+
+.col_2_columns {
+  display: inline-block;
+  vertical-align: top;
+
+  border: 1px #b3b3b3 solid;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  width: 450px;
+  height: 500px;
+  overflow: auto;
+
+  margin: 25px 25px 25px 25px;
+  padding: 10px 10px 10px 10px;
+}
+
+.col_3_columns {
+  display: inline-block;
+  vertical-align: top;
+
+  border: 1px #b3b3b3 solid;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  width: 350px;
+  overflow: auto;
+
+  margin: 25px 25px 25px 25px;
+  padding: 10px 10px 10px 10px;
+}
+
+.col_no_border {
+  display: inline-block;
+  vertical-align: top;
+
+  border: 0px;
+  background-color: #FFF;
+  width: 350px;
+  overflow: auto;
+
+  margin: 65px 25px 25px 25px;
+  padding: 10px 10px 10px 10px;
+}
+
+.img_me_medium {
+  height: 150px;
+  float: right;
+}
+
+.img_me_large {
+  height: 400px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3em;
+  padding-bottom: 25px;
+}
+
+h2 {
+  font-size: 2em;
+  padding-bottom: 15px;
+}
+
+h2 a {
+  color: #000;
+  text-decoration: none;
+
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+p {
+  padding: 3px;
+}
+
+p a {
+  color: #000;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+.no_link {
+  background-color: #f2f2f2;
+}
+
+.text_left {
+  text-align: left;
+  line-height: 15px;
+}
+
+.text_middle {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.text_center {
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+}
+
+.google_link {
+  font-weight: bold;
+}
+
+.google_frame {
+  display: block;
+  margin-top: 5px;
+  width:100%;
+  height:300px;
+}
+
+ul {
+  padding-top: 10px;
+}
+
+li {
+  list-style-position: inside;
+  text-align: left;
+  list-style-type: upper-roman;
+}
+
+.img_ico {
+  width: 20px;
+}
+
+.img_ico_large {
+  width: 150px;
+  display: inline-block;
+}
+
+.img_family {
+  width: 200px;
+  float: right;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.img_digital {
+  width: 200px;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Footer style */
+.wrapper_footer {
+  position: fixed;
+  bottom: 0px;
+  height: 2.7em;
+  width: 100%;
+
+  background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,58,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,58,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,58,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffff3a',GradientType=1 ); /* IE6-9 */
+}
+
+.header_footer {
+  text-align: center;
+  font-family: Verdana, "Times New Roman", Times, serif;
+  font-size: 0.7em;
+}
+/* Footer style */
