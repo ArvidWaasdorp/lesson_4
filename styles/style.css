@@ -99,7 +99,7 @@ nav.top_menu a:hover {
   padding: 10px;
 }
 
-.col_no_border {
+.col_no_border, .col_no_border-contact, .col_no_border-images {
   display: inline-block;
   vertical-align: top;
 
@@ -252,3 +252,65 @@ li {
   font-size: 0.7em;
 }
 /* Footer style */
+
+/*Stukje responsive design*/
+
+@media screen and (max-width: 610px) {
+  .me_small {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 510px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  .col_no_border, .col_no_border-contact, .col_no_border-images, .col_3_columns, .col_2_columns {
+    width: 450px;
+    display: block;
+  }
+  
+  .wrapper_footer {
+    display: none;
+  }
+
+  .me_small {
+    display: none;
+  }
+
+  .header_content {
+      min-width: 300px;
+  }
+
+  nav.top_menu a {
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .col_no_border, .col_no_border-contact, .col_no_border-images, .col_3_columns, .col_2_columns {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .col_no_border-images {
+    width: 100%;
+    display: none;
+  }
+
+  .img_me_large {
+    width: 80%;
+  }
+
+  .wrapper_footer {
+    display: none;
+  }
+
+  .me_small {
+    display: none;
+  }
+}
