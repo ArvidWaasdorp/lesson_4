@@ -264,12 +264,16 @@ li {
 
 @media screen and (max-width: 510px) {
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 
+
   .col_no_border, .col_no_border-contact, .col_no_border-images, .col_3_columns, .col_2_columns {
-    width: 450px;
+    width: 90%;
     display: block;
+    padding: 5px;
+    margin: 5px;
+    min-width: 98%;
   }
   
   .wrapper_footer {
@@ -281,7 +285,7 @@ li {
   }
 
   .header_content {
-      min-width: 300px;
+    min-width: 300px;
   }
 
   nav.top_menu a {
@@ -293,24 +297,16 @@ li {
 @media screen and (max-width: 320px) {
   .col_no_border, .col_no_border-contact, .col_no_border-images, .col_3_columns, .col_2_columns {
     display: block;
-    width: 100%;
-    padding: 10px;
+    width: 95%;
+    padding: 2px;
+    margin: 2px; 
+    min-width: 98%;
   }
   
-  .col_no_border-images {
-    width: 100%;
+  
+  img, .wrapper_footer, .col_no_border-images, .me_small {
     display: none;
   }
 
-  .img_me_large {
-    width: 80%;
-  }
-
-  .wrapper_footer {
-    display: none;
-  }
-
-  .me_small {
-    display: none;
-  }
+  
 }
